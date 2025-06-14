@@ -193,7 +193,10 @@ impl CodeWriter for SchemaMap {
                         let fields: BTreeMap<_, _> = class
                             .fields
                             .iter()
-                            .map(|field| (&field.name, field.offset))
+                            .map(|field| (&field.name, json!({
+                                "offset": field.offset,
+                                "type_name": field.type_name,
+                            })))
                             .collect();
 
                         let metadata: Vec<_> = class

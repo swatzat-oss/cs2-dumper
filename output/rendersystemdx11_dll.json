@@ -3,30 +3,66 @@
     "classes": {
       "RenderInputLayoutField_t": {
         "fields": {
-          "m_Format": 36,
-          "m_nInstanceStepRate": 52,
-          "m_nOffset": 40,
-          "m_nSemanticIndex": 32,
-          "m_nSlot": 44,
-          "m_nSlotType": 48,
-          "m_pSemanticName": 0
+          "m_Format": {
+            "offset": 36,
+            "type_name": "uint32"
+          },
+          "m_nInstanceStepRate": {
+            "offset": 52,
+            "type_name": "int32"
+          },
+          "m_nOffset": {
+            "offset": 40,
+            "type_name": "int32"
+          },
+          "m_nSemanticIndex": {
+            "offset": 32,
+            "type_name": "int32"
+          },
+          "m_nSlot": {
+            "offset": 44,
+            "type_name": "int32"
+          },
+          "m_nSlotType": {
+            "offset": 48,
+            "type_name": "RenderSlotType_t"
+          },
+          "m_pSemanticName": {
+            "offset": 0,
+            "type_name": "uint8[32]"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "VsInputSignatureElement_t": {
         "fields": {
-          "m_nD3DSemanticIndex": 192,
-          "m_pD3DSemanticName": 128,
-          "m_pName": 0,
-          "m_pSemantic": 64
+          "m_nD3DSemanticIndex": {
+            "offset": 192,
+            "type_name": "int32"
+          },
+          "m_pD3DSemanticName": {
+            "offset": 128,
+            "type_name": "char[64]"
+          },
+          "m_pName": {
+            "offset": 0,
+            "type_name": "char[64]"
+          },
+          "m_pSemantic": {
+            "offset": 64,
+            "type_name": "char[64]"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "VsInputSignature_t": {
         "fields": {
-          "m_elems": 0
+          "m_elems": {
+            "offset": 0,
+            "type_name": "CUtlVector<VsInputSignatureElement_t>"
+          }
         },
         "metadata": [],
         "parent": null

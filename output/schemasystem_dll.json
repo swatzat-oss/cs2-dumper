@@ -3,8 +3,14 @@
     "classes": {
       "CExampleSchemaVData_Monomorphic": {
         "fields": {
-          "m_nExample1": 0,
-          "m_nExample2": 4
+          "m_nExample1": {
+            "offset": 0,
+            "type_name": "int32"
+          },
+          "m_nExample2": {
+            "offset": 4,
+            "type_name": "int32"
+          }
         },
         "metadata": [
           {
@@ -16,7 +22,10 @@
       },
       "CExampleSchemaVData_PolymorphicBase": {
         "fields": {
-          "m_nBase": 8
+          "m_nBase": {
+            "offset": 8,
+            "type_name": "int32"
+          }
         },
         "metadata": [
           {
@@ -28,7 +37,10 @@
       },
       "CExampleSchemaVData_PolymorphicDerivedA": {
         "fields": {
-          "m_nDerivedA": 16
+          "m_nDerivedA": {
+            "offset": 16,
+            "type_name": "int32"
+          }
         },
         "metadata": [
           {
@@ -40,7 +52,10 @@
       },
       "CExampleSchemaVData_PolymorphicDerivedB": {
         "fields": {
-          "m_nDerivedB": 16
+          "m_nDerivedB": {
+            "offset": 16,
+            "type_name": "int32"
+          }
         },
         "metadata": [
           {
@@ -52,28 +67,94 @@
       },
       "CSchemaSystemInternalRegistration": {
         "fields": {
-          "m_CTransform": 256,
-          "m_CUtlBinaryBlock": 296,
-          "m_CUtlString": 320,
-          "m_CUtlSymbol": 328,
-          "m_Color": 224,
-          "m_DegreeEuler": 100,
-          "m_KV3": 368,
-          "m_QAngle": 64,
-          "m_Quaternion": 48,
-          "m_QuaternionStorage": 112,
-          "m_RadianEuler": 88,
-          "m_ResourceTypes": 360,
-          "m_RotationVector": 76,
-          "m_Vector": 8,
-          "m_Vector2D": 0,
-          "m_Vector4D": 228,
-          "m_VectorAligned": 32,
-          "m_matrix3x4_t": 128,
-          "m_matrix3x4a_t": 176,
-          "m_pKeyValues": 288,
-          "m_stringToken": 332,
-          "m_stringTokenWithStorage": 336
+          "m_CTransform": {
+            "offset": 256,
+            "type_name": "CTransform"
+          },
+          "m_CUtlBinaryBlock": {
+            "offset": 296,
+            "type_name": "CUtlBinaryBlock"
+          },
+          "m_CUtlString": {
+            "offset": 320,
+            "type_name": "CUtlString"
+          },
+          "m_CUtlSymbol": {
+            "offset": 328,
+            "type_name": "CUtlSymbol"
+          },
+          "m_Color": {
+            "offset": 224,
+            "type_name": "Color"
+          },
+          "m_DegreeEuler": {
+            "offset": 100,
+            "type_name": "DegreeEuler"
+          },
+          "m_KV3": {
+            "offset": 368,
+            "type_name": "KeyValues3"
+          },
+          "m_QAngle": {
+            "offset": 64,
+            "type_name": "QAngle"
+          },
+          "m_Quaternion": {
+            "offset": 48,
+            "type_name": "Quaternion"
+          },
+          "m_QuaternionStorage": {
+            "offset": 112,
+            "type_name": "QuaternionStorage"
+          },
+          "m_RadianEuler": {
+            "offset": 88,
+            "type_name": "RadianEuler"
+          },
+          "m_ResourceTypes": {
+            "offset": 360,
+            "type_name": "CResourceArray<CResourcePointer<CResourceString>>"
+          },
+          "m_RotationVector": {
+            "offset": 76,
+            "type_name": "RotationVector"
+          },
+          "m_Vector": {
+            "offset": 8,
+            "type_name": "Vector"
+          },
+          "m_Vector2D": {
+            "offset": 0,
+            "type_name": "Vector2D"
+          },
+          "m_Vector4D": {
+            "offset": 228,
+            "type_name": "Vector4D"
+          },
+          "m_VectorAligned": {
+            "offset": 32,
+            "type_name": "VectorAligned"
+          },
+          "m_matrix3x4_t": {
+            "offset": 128,
+            "type_name": "matrix3x4_t"
+          },
+          "m_matrix3x4a_t": {
+            "offset": 176,
+            "type_name": "matrix3x4a_t"
+          },
+          "m_pKeyValues": {
+            "offset": 288,
+            "type_name": "KeyValues*"
+          },
+          "m_stringToken": {
+            "offset": 332,
+            "type_name": "CUtlStringToken"
+          },
+          "m_stringTokenWithStorage": {
+            "offset": 336,
+            "type_name": "CUtlStringTokenWithStorage"
+          }
         },
         "metadata": [],
         "parent": null
@@ -90,7 +171,10 @@
       },
       "ResourceId_t": {
         "fields": {
-          "m_Value": 0
+          "m_Value": {
+            "offset": 0,
+            "type_name": "uint64"
+          }
         },
         "metadata": [],
         "parent": null

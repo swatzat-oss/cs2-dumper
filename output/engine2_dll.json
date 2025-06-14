@@ -8,24 +8,42 @@
       },
       "CEntityComponentHelper": {
         "fields": {
-          "m_flags": 8,
-          "m_nPriority": 24,
-          "m_pInfo": 16,
-          "m_pNext": 32
+          "m_flags": {
+            "offset": 8,
+            "type_name": "uint32"
+          },
+          "m_nPriority": {
+            "offset": 24,
+            "type_name": "int32"
+          },
+          "m_pInfo": {
+            "offset": 16,
+            "type_name": "EntComponentInfo_t*"
+          },
+          "m_pNext": {
+            "offset": 32,
+            "type_name": "CEntityComponentHelper*"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "CEntityIOOutput": {
         "fields": {
-          "m_Value": 24
+          "m_Value": {
+            "offset": 24,
+            "type_name": "CVariantBase<CVariantDefaultAllocator>"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "CNetworkVarChainer": {
         "fields": {
-          "m_PathIndex": 32
+          "m_PathIndex": {
+            "offset": 32,
+            "type_name": "ChangeAccessorFieldPathIndex_t"
+          }
         },
         "metadata": [],
         "parent": null
@@ -37,23 +55,56 @@
       },
       "EngineLoopState_t": {
         "fields": {
-          "m_nPlatWindowHeight": 28,
-          "m_nPlatWindowWidth": 24,
-          "m_nRenderHeight": 36,
-          "m_nRenderWidth": 32
+          "m_nPlatWindowHeight": {
+            "offset": 28,
+            "type_name": "int32"
+          },
+          "m_nPlatWindowWidth": {
+            "offset": 24,
+            "type_name": "int32"
+          },
+          "m_nRenderHeight": {
+            "offset": 36,
+            "type_name": "int32"
+          },
+          "m_nRenderWidth": {
+            "offset": 32,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EntComponentInfo_t": {
         "fields": {
-          "m_nFlags": 36,
-          "m_nRuntimeIndex": 32,
-          "m_pBaseClassComponentHelper": 96,
-          "m_pCPPClassname": 8,
-          "m_pName": 0,
-          "m_pNetworkDataReferencedDescription": 16,
-          "m_pNetworkDataReferencedPtrPropDescription": 24
+          "m_nFlags": {
+            "offset": 36,
+            "type_name": "uint32"
+          },
+          "m_nRuntimeIndex": {
+            "offset": 32,
+            "type_name": "int32"
+          },
+          "m_pBaseClassComponentHelper": {
+            "offset": 96,
+            "type_name": "CEntityComponentHelper*"
+          },
+          "m_pCPPClassname": {
+            "offset": 8,
+            "type_name": "char*"
+          },
+          "m_pName": {
+            "offset": 0,
+            "type_name": "char*"
+          },
+          "m_pNetworkDataReferencedDescription": {
+            "offset": 16,
+            "type_name": "char*"
+          },
+          "m_pNetworkDataReferencedPtrPropDescription": {
+            "offset": 24,
+            "type_name": "char*"
+          }
         },
         "metadata": [],
         "parent": null
@@ -70,17 +121,32 @@
       },
       "EventAdvanceTick_t": {
         "fields": {
-          "m_nCurrentTick": 48,
-          "m_nCurrentTickThisFrame": 52,
-          "m_nTotalTicks": 60,
-          "m_nTotalTicksThisFrame": 56
+          "m_nCurrentTick": {
+            "offset": 48,
+            "type_name": "int32"
+          },
+          "m_nCurrentTickThisFrame": {
+            "offset": 52,
+            "type_name": "int32"
+          },
+          "m_nTotalTicks": {
+            "offset": 60,
+            "type_name": "int32"
+          },
+          "m_nTotalTicksThisFrame": {
+            "offset": 56,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": "EventSimulate_t"
       },
       "EventAppShutdown_t": {
         "fields": {
-          "m_nDummy0": 0
+          "m_nDummy0": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
@@ -97,21 +163,48 @@
       },
       "EventClientFrameSimulate_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_bScheduleSendTickPacket": 48,
-          "m_flFrameTime": 44,
-          "m_flRealTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_bScheduleSendTickPacket": {
+            "offset": 48,
+            "type_name": "bool"
+          },
+          "m_flFrameTime": {
+            "offset": 44,
+            "type_name": "float32"
+          },
+          "m_flRealTime": {
+            "offset": 40,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventClientOutput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_bRenderOnly": 52,
-          "m_flRealTime": 44,
-          "m_flRenderFrameTimeUnbounded": 48,
-          "m_flRenderTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_bRenderOnly": {
+            "offset": 52,
+            "type_name": "bool"
+          },
+          "m_flRealTime": {
+            "offset": 44,
+            "type_name": "float32"
+          },
+          "m_flRenderFrameTimeUnbounded": {
+            "offset": 48,
+            "type_name": "float32"
+          },
+          "m_flRenderTime": {
+            "offset": 40,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
@@ -123,15 +216,24 @@
       },
       "EventClientPollInput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_flRealTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_flRealTime": {
+            "offset": 40,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventClientPollNetworking_t": {
         "fields": {
-          "m_nTickCount": 0
+          "m_nTickCount": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
@@ -143,11 +245,26 @@
       },
       "EventClientPostOutput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_bRenderOnly": 56,
-          "m_flRenderFrameTime": 48,
-          "m_flRenderFrameTimeUnbounded": 52,
-          "m_flRenderTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_bRenderOnly": {
+            "offset": 56,
+            "type_name": "bool"
+          },
+          "m_flRenderFrameTime": {
+            "offset": 48,
+            "type_name": "float32"
+          },
+          "m_flRenderFrameTimeUnbounded": {
+            "offset": 52,
+            "type_name": "float32"
+          },
+          "m_flRenderTime": {
+            "offset": 40,
+            "type_name": "float64"
+          }
         },
         "metadata": [],
         "parent": null
@@ -159,12 +276,30 @@
       },
       "EventClientPreOutput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_bRenderOnly": 68,
-          "m_flRealTime": 64,
-          "m_flRenderFrameTime": 48,
-          "m_flRenderFrameTimeUnbounded": 56,
-          "m_flRenderTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_bRenderOnly": {
+            "offset": 68,
+            "type_name": "bool"
+          },
+          "m_flRealTime": {
+            "offset": 64,
+            "type_name": "float32"
+          },
+          "m_flRenderFrameTime": {
+            "offset": 48,
+            "type_name": "float64"
+          },
+          "m_flRenderFrameTimeUnbounded": {
+            "offset": 56,
+            "type_name": "float64"
+          },
+          "m_flRenderTime": {
+            "offset": 40,
+            "type_name": "float64"
+          }
         },
         "metadata": [],
         "parent": null
@@ -176,33 +311,60 @@
       },
       "EventClientProcessGameInput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_flFrameTime": 44,
-          "m_flRealTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_flFrameTime": {
+            "offset": 44,
+            "type_name": "float32"
+          },
+          "m_flRealTime": {
+            "offset": 40,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventClientProcessInput_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_flRealTime": 40,
-          "m_flTickInterval": 44,
-          "m_flTickStartTime": 48
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_flRealTime": {
+            "offset": 40,
+            "type_name": "float32"
+          },
+          "m_flTickInterval": {
+            "offset": 44,
+            "type_name": "float32"
+          },
+          "m_flTickStartTime": {
+            "offset": 48,
+            "type_name": "float64"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventClientProcessNetworking_t": {
         "fields": {
-          "m_nTickCount": 0
+          "m_nTickCount": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventClientSceneSystemThreadStateChange_t": {
         "fields": {
-          "m_bThreadsActive": 0
+          "m_bThreadsActive": {
+            "offset": 0,
+            "type_name": "bool"
+          }
         },
         "metadata": [],
         "parent": null
@@ -214,7 +376,10 @@
       },
       "EventFrameBoundary_t": {
         "fields": {
-          "m_flFrameTime": 0
+          "m_flFrameTime": {
+            "offset": 0,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
@@ -226,31 +391,52 @@
       },
       "EventPostAdvanceTick_t": {
         "fields": {
-          "m_nCurrentTick": 48,
-          "m_nCurrentTickThisFrame": 52,
-          "m_nTotalTicks": 60,
-          "m_nTotalTicksThisFrame": 56
+          "m_nCurrentTick": {
+            "offset": 48,
+            "type_name": "int32"
+          },
+          "m_nCurrentTickThisFrame": {
+            "offset": 52,
+            "type_name": "int32"
+          },
+          "m_nTotalTicks": {
+            "offset": 60,
+            "type_name": "int32"
+          },
+          "m_nTotalTicksThisFrame": {
+            "offset": 56,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": "EventSimulate_t"
       },
       "EventPostDataUpdate_t": {
         "fields": {
-          "m_nCount": 0
+          "m_nCount": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventPreDataUpdate_t": {
         "fields": {
-          "m_nCount": 0
+          "m_nCount": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventProfileStorageAvailable_t": {
         "fields": {
-          "m_nSplitScreenSlot": 0
+          "m_nSplitScreenSlot": {
+            "offset": 0,
+            "type_name": "CSplitScreenSlot"
+          }
         },
         "metadata": [],
         "parent": null
@@ -297,32 +483,74 @@
       },
       "EventSetTime_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_flRealTime": 48,
-          "m_flRenderFrameTime": 64,
-          "m_flRenderFrameTimeUnbounded": 72,
-          "m_flRenderFrameTimeUnscaled": 80,
-          "m_flRenderTime": 56,
-          "m_flTickRemainder": 88,
-          "m_nClientOutputFrames": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_flRealTime": {
+            "offset": 48,
+            "type_name": "float64"
+          },
+          "m_flRenderFrameTime": {
+            "offset": 64,
+            "type_name": "float64"
+          },
+          "m_flRenderFrameTimeUnbounded": {
+            "offset": 72,
+            "type_name": "float64"
+          },
+          "m_flRenderFrameTimeUnscaled": {
+            "offset": 80,
+            "type_name": "float64"
+          },
+          "m_flRenderTime": {
+            "offset": 56,
+            "type_name": "float64"
+          },
+          "m_flTickRemainder": {
+            "offset": 88,
+            "type_name": "float64"
+          },
+          "m_nClientOutputFrames": {
+            "offset": 40,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventSimpleLoopFrameUpdate_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_flFrameTime": 44,
-          "m_flRealTime": 40
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_flFrameTime": {
+            "offset": 44,
+            "type_name": "float32"
+          },
+          "m_flRealTime": {
+            "offset": 40,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "EventSimulate_t": {
         "fields": {
-          "m_LoopState": 0,
-          "m_bFirstTick": 40,
-          "m_bLastTick": 41
+          "m_LoopState": {
+            "offset": 0,
+            "type_name": "EngineLoopState_t"
+          },
+          "m_bFirstTick": {
+            "offset": 40,
+            "type_name": "bool"
+          },
+          "m_bLastTick": {
+            "offset": 41,
+            "type_name": "bool"
+          }
         },
         "metadata": [],
         "parent": null
@@ -334,14 +562,20 @@
       },
       "GameTick_t": {
         "fields": {
-          "m_Value": 0
+          "m_Value": {
+            "offset": 0,
+            "type_name": "int32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "GameTime_t": {
         "fields": {
-          "m_Value": 0
+          "m_Value": {
+            "offset": 0,
+            "type_name": "float32"
+          }
         },
         "metadata": [],
         "parent": null
