@@ -1,0 +1,12 @@
+{
+  "panorama.dll": {
+    "classes": {
+      "ELayoutNodeType": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      }
+    },
+    "enums": {}
+  }
+}
