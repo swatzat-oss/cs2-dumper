@@ -1,285 +1,300 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-11-26 20:18:09.116432200 UTC
+// 2025-11-25 23:18:27.836375200 UTC
 
-#pragma once
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
-#include <cstddef>
-
-namespace cs2_dumper {
-    namespace schemas {
+pub mod cs2_dumper {
+    pub mod schemas {
         // Module: engine2.dll
         // Class count: 48
-        // Enum count: 0
-        namespace engine2_dll {
+        // Enum count: 2
+        pub mod engine2_dll {
+            // Alignment: 4
+            // Member count: 3
+            #[repr(u32)]
+            pub enum EntityDormancyType_t {
+                ENTITY_NOT_DORMANT = 0x0,
+                ENTITY_DORMANT = 0x1,
+                ENTITY_SUSPENDED = 0x2
+            }
+            // Alignment: 4
+            // Member count: 4
+            #[repr(u32)]
+            pub enum EntityIOTargetType_t {
+                ENTITY_IO_TARGET_INVALID = u32::MAX,
+                ENTITY_IO_TARGET_ENTITYNAME = 0x2,
+                ENTITY_IO_TARGET_EHANDLE = 0x6,
+                ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME = 0x7
+            }
             // Parent: None
             // Field count: 0
-            namespace EventClientPostSimulate_t {
+            pub mod EventClientPostSimulate_t {
             }
             // Parent: None
             // Field count: 3
-            namespace EventSimpleLoopFrameUpdate_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
-                constexpr std::ptrdiff_t m_flFrameTime = 0x2C; // float32
+            pub mod EventSimpleLoopFrameUpdate_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRealTime: usize = 0x28; // float32
+                pub const m_flFrameTime: usize = 0x2C; // float32
             }
             // Parent: None
             // Field count: 4
-            namespace EventPostAdvanceTick_t {
-                constexpr std::ptrdiff_t m_nCurrentTick = 0x30; // int32
-                constexpr std::ptrdiff_t m_nCurrentTickThisFrame = 0x34; // int32
-                constexpr std::ptrdiff_t m_nTotalTicksThisFrame = 0x38; // int32
-                constexpr std::ptrdiff_t m_nTotalTicks = 0x3C; // int32
+            pub mod EventPostAdvanceTick_t {
+                pub const m_nCurrentTick: usize = 0x30; // int32
+                pub const m_nCurrentTickThisFrame: usize = 0x34; // int32
+                pub const m_nTotalTicksThisFrame: usize = 0x38; // int32
+                pub const m_nTotalTicks: usize = 0x3C; // int32
+            }
+            // Parent: 
+            // Field count: 1
+            pub mod CEntityIOOutput {
+                pub const m_Value: usize = 0x18; // CVariantBase<CVariantDefaultAllocator>
             }
             // Parent: None
             // Field count: 1
-            namespace CEntityIOOutput {
-                constexpr std::ptrdiff_t m_Value = 0x18; // CVariantBase<CVariantDefaultAllocator>
-            }
-            // Parent: None
-            // Field count: 1
-            namespace EventClientSceneSystemThreadStateChange_t {
-                constexpr std::ptrdiff_t m_bThreadsActive = 0x0; // bool
+            pub mod EventClientSceneSystemThreadStateChange_t {
+                pub const m_bThreadsActive: usize = 0x0; // bool
             }
             // Parent: None
             // Field count: 5
-            namespace EventClientOutput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRenderTime = 0x28; // float32
-                constexpr std::ptrdiff_t m_flRealTime = 0x2C; // float32
-                constexpr std::ptrdiff_t m_flRenderFrameTimeUnbounded = 0x30; // float32
-                constexpr std::ptrdiff_t m_bRenderOnly = 0x34; // bool
+            pub mod EventClientOutput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRenderTime: usize = 0x28; // float32
+                pub const m_flRealTime: usize = 0x2C; // float32
+                pub const m_flRenderFrameTimeUnbounded: usize = 0x30; // float32
+                pub const m_bRenderOnly: usize = 0x34; // bool
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerPostSimulate_t {
+            pub mod EventServerPostSimulate_t {
             }
             // Parent: None
             // Field count: 4
-            namespace CEntityComponentHelper {
-                constexpr std::ptrdiff_t m_flags = 0x8; // uint32
-                constexpr std::ptrdiff_t m_pInfo = 0x10; // EntComponentInfo_t*
-                constexpr std::ptrdiff_t m_nPriority = 0x18; // int32
-                constexpr std::ptrdiff_t m_pNext = 0x20; // CEntityComponentHelper*
+            pub mod CEntityComponentHelper {
+                pub const m_flags: usize = 0x8; // uint32
+                pub const m_pInfo: usize = 0x10; // EntComponentInfo_t*
+                pub const m_nPriority: usize = 0x18; // int32
+                pub const m_pNext: usize = 0x20; // CEntityComponentHelper*
             }
             // Parent: None
             // Field count: 1
-            namespace GameTime_t {
-                constexpr std::ptrdiff_t m_Value = 0x0; // float32
+            pub mod GameTime_t {
+                pub const m_Value: usize = 0x0; // float32
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerEndAsyncPostTickWork_t {
+            pub mod EventServerEndAsyncPostTickWork_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientAdvanceTick_t {
+            pub mod EventClientAdvanceTick_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EntInput_t {
+            pub mod EntInput_t {
             }
             // Parent: None
             // Field count: 1
-            namespace CNetworkVarChainer {
-                constexpr std::ptrdiff_t m_PathIndex = 0x20; // ChangeAccessorFieldPathIndex_t
+            pub mod CNetworkVarChainer {
+                pub const m_PathIndex: usize = 0x20; // ChangeAccessorFieldPathIndex_t
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientSimulate_t {
+            pub mod EventClientSimulate_t {
             }
             // Parent: None
             // Field count: 5
-            namespace EventClientPostOutput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRenderTime = 0x28; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTime = 0x30; // float32
-                constexpr std::ptrdiff_t m_flRenderFrameTimeUnbounded = 0x34; // float32
-                constexpr std::ptrdiff_t m_bRenderOnly = 0x38; // bool
+            pub mod EventClientPostOutput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRenderTime: usize = 0x28; // float64
+                pub const m_flRenderFrameTime: usize = 0x30; // float32
+                pub const m_flRenderFrameTimeUnbounded: usize = 0x34; // float32
+                pub const m_bRenderOnly: usize = 0x38; // bool
             }
             // Parent: None
             // Field count: 1
-            namespace GameTick_t {
-                constexpr std::ptrdiff_t m_Value = 0x0; // int32
+            pub mod GameTick_t {
+                pub const m_Value: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 2
-            namespace EventClientPollInput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
+            pub mod EventClientPollInput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRealTime: usize = 0x28; // float32
             }
             // Parent: None
             // Field count: 1
-            namespace EventPreDataUpdate_t {
-                constexpr std::ptrdiff_t m_nCount = 0x0; // int32
+            pub mod EventPreDataUpdate_t {
+                pub const m_nCount: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 3
-            namespace EventClientProcessGameInput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
-                constexpr std::ptrdiff_t m_flFrameTime = 0x2C; // float32
+            pub mod EventClientProcessGameInput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRealTime: usize = 0x28; // float32
+                pub const m_flFrameTime: usize = 0x2C; // float32
             }
             // Parent: None
             // Field count: 1
-            namespace EventFrameBoundary_t {
-                constexpr std::ptrdiff_t m_flFrameTime = 0x0; // float32
+            pub mod EventFrameBoundary_t {
+                pub const m_flFrameTime: usize = 0x0; // float32
             }
             // Parent: None
             // Field count: 1
-            namespace EventAppShutdown_t {
-                constexpr std::ptrdiff_t m_nDummy0 = 0x0; // int32
+            pub mod EventAppShutdown_t {
+                pub const m_nDummy0: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerSimulate_t {
+            pub mod EventServerSimulate_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerPostAdvanceTick_t {
+            pub mod EventServerPostAdvanceTick_t {
             }
             // Parent: None
             // Field count: 1
-            namespace EventProfileStorageAvailable_t {
-                constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x0; // CSplitScreenSlot
+            pub mod EventProfileStorageAvailable_t {
+                pub const m_nSplitScreenSlot: usize = 0x0; // CSplitScreenSlot
             }
             // Parent: None
             // Field count: 1
-            namespace EventPostDataUpdate_t {
-                constexpr std::ptrdiff_t m_nCount = 0x0; // int32
+            pub mod EventPostDataUpdate_t {
+                pub const m_nCount: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientPreSimulate_t {
+            pub mod EventClientPreSimulate_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientPauseSimulate_t {
+            pub mod EventClientPauseSimulate_t {
             }
             // Parent: None
             // Field count: 1
-            namespace EventClientProcessNetworking_t {
-                constexpr std::ptrdiff_t m_nTickCount = 0x0; // int32
+            pub mod EventClientProcessNetworking_t {
+                pub const m_nTickCount: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 4
-            namespace EventAdvanceTick_t {
-                constexpr std::ptrdiff_t m_nCurrentTick = 0x30; // int32
-                constexpr std::ptrdiff_t m_nCurrentTickThisFrame = 0x34; // int32
-                constexpr std::ptrdiff_t m_nTotalTicksThisFrame = 0x38; // int32
-                constexpr std::ptrdiff_t m_nTotalTicks = 0x3C; // int32
+            pub mod EventAdvanceTick_t {
+                pub const m_nCurrentTick: usize = 0x30; // int32
+                pub const m_nCurrentTickThisFrame: usize = 0x34; // int32
+                pub const m_nTotalTicksThisFrame: usize = 0x38; // int32
+                pub const m_nTotalTicks: usize = 0x3C; // int32
             }
             // Parent: None
             // Field count: 0
-            namespace EventSplitScreenStateChanged_t {
+            pub mod EventSplitScreenStateChanged_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientPostAdvanceTick_t {
+            pub mod EventClientPostAdvanceTick_t {
             }
             // Parent: None
             // Field count: 0
-            namespace CVariantDefaultAllocator {
+            pub mod CVariantDefaultAllocator {
             }
             // Parent: None
             // Field count: 0
-            namespace EventModInitialized_t {
+            pub mod EventModInitialized_t {
             }
             // Parent: None
             // Field count: 6
-            namespace EventClientPreOutput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRenderTime = 0x28; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTime = 0x30; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTimeUnbounded = 0x38; // float64
-                constexpr std::ptrdiff_t m_flRealTime = 0x40; // float32
-                constexpr std::ptrdiff_t m_bRenderOnly = 0x44; // bool
+            pub mod EventClientPreOutput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRenderTime: usize = 0x28; // float64
+                pub const m_flRenderFrameTime: usize = 0x30; // float64
+                pub const m_flRenderFrameTimeUnbounded: usize = 0x38; // float64
+                pub const m_flRealTime: usize = 0x40; // float32
+                pub const m_bRenderOnly: usize = 0x44; // bool
             }
             // Parent: None
             // Field count: 4
-            namespace EventClientFrameSimulate_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
-                constexpr std::ptrdiff_t m_flFrameTime = 0x2C; // float32
-                constexpr std::ptrdiff_t m_bScheduleSendTickPacket = 0x30; // bool
+            pub mod EventClientFrameSimulate_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRealTime: usize = 0x28; // float32
+                pub const m_flFrameTime: usize = 0x2C; // float32
+                pub const m_bScheduleSendTickPacket: usize = 0x30; // bool
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerAdvanceTick_t {
+            pub mod EventServerAdvanceTick_t {
             }
             // Parent: None
             // Field count: 8
-            namespace EventSetTime_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_nClientOutputFrames = 0x28; // int32
-                constexpr std::ptrdiff_t m_flRealTime = 0x30; // float64
-                constexpr std::ptrdiff_t m_flRenderTime = 0x38; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTime = 0x40; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTimeUnbounded = 0x48; // float64
-                constexpr std::ptrdiff_t m_flRenderFrameTimeUnscaled = 0x50; // float64
-                constexpr std::ptrdiff_t m_flTickRemainder = 0x58; // float64
+            pub mod EventSetTime_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_nClientOutputFrames: usize = 0x28; // int32
+                pub const m_flRealTime: usize = 0x30; // float64
+                pub const m_flRenderTime: usize = 0x38; // float64
+                pub const m_flRenderFrameTime: usize = 0x40; // float64
+                pub const m_flRenderFrameTimeUnbounded: usize = 0x48; // float64
+                pub const m_flRenderFrameTimeUnscaled: usize = 0x50; // float64
+                pub const m_flTickRemainder: usize = 0x58; // float64
             }
             // Parent: None
             // Field count: 0
-            namespace EntOutput_t {
+            pub mod EntOutput_t {
             }
             // Parent: None
             // Field count: 3
-            namespace EventSimulate_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_bFirstTick = 0x28; // bool
-                constexpr std::ptrdiff_t m_bLastTick = 0x29; // bool
+            pub mod EventSimulate_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_bFirstTick: usize = 0x28; // bool
+                pub const m_bLastTick: usize = 0x29; // bool
             }
             // Parent: None
             // Field count: 0
-            namespace EventClientAdvanceNonRenderedFrame_t {
+            pub mod EventClientAdvanceNonRenderedFrame_t {
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerProcessNetworking_t {
+            pub mod EventServerProcessNetworking_t {
             }
             // Parent: None
             // Field count: 0
-            namespace CEmptyEntityInstance {
+            pub mod CEmptyEntityInstance {
             }
             // Parent: None
             // Field count: 7
-            namespace EntComponentInfo_t {
-                constexpr std::ptrdiff_t m_pName = 0x0; // char*
-                constexpr std::ptrdiff_t m_pCPPClassname = 0x8; // char*
-                constexpr std::ptrdiff_t m_pNetworkDataReferencedDescription = 0x10; // char*
-                constexpr std::ptrdiff_t m_pNetworkDataReferencedPtrPropDescription = 0x18; // char*
-                constexpr std::ptrdiff_t m_nRuntimeIndex = 0x20; // int32
-                constexpr std::ptrdiff_t m_nFlags = 0x24; // uint32
-                constexpr std::ptrdiff_t m_pBaseClassComponentHelper = 0x60; // CEntityComponentHelper*
+            pub mod EntComponentInfo_t {
+                pub const m_pName: usize = 0x0; // char*
+                pub const m_pCPPClassname: usize = 0x8; // char*
+                pub const m_pNetworkDataReferencedDescription: usize = 0x10; // char*
+                pub const m_pNetworkDataReferencedPtrPropDescription: usize = 0x18; // char*
+                pub const m_nRuntimeIndex: usize = 0x20; // int32
+                pub const m_nFlags: usize = 0x24; // uint32
+                pub const m_pBaseClassComponentHelper: usize = 0x60; // CEntityComponentHelper*
             }
             // Parent: None
             // Field count: 4
-            namespace EngineLoopState_t {
-                constexpr std::ptrdiff_t m_nPlatWindowWidth = 0x18; // int32
-                constexpr std::ptrdiff_t m_nPlatWindowHeight = 0x1C; // int32
-                constexpr std::ptrdiff_t m_nRenderWidth = 0x20; // int32
-                constexpr std::ptrdiff_t m_nRenderHeight = 0x24; // int32
+            pub mod EngineLoopState_t {
+                pub const m_nPlatWindowWidth: usize = 0x18; // int32
+                pub const m_nPlatWindowHeight: usize = 0x1C; // int32
+                pub const m_nRenderWidth: usize = 0x20; // int32
+                pub const m_nRenderHeight: usize = 0x24; // int32
             }
             // Parent: None
             // Field count: 1
-            namespace EventClientPollNetworking_t {
-                constexpr std::ptrdiff_t m_nTickCount = 0x0; // int32
+            pub mod EventClientPollNetworking_t {
+                pub const m_nTickCount: usize = 0x0; // int32
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerBeginAsyncPostTickWork_t {
+            pub mod EventServerBeginAsyncPostTickWork_t {
             }
             // Parent: None
             // Field count: 4
-            namespace EventClientProcessInput_t {
-                constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
-                constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
-                constexpr std::ptrdiff_t m_flTickInterval = 0x2C; // float32
-                constexpr std::ptrdiff_t m_flTickStartTime = 0x30; // float64
+            pub mod EventClientProcessInput_t {
+                pub const m_LoopState: usize = 0x0; // EngineLoopState_t
+                pub const m_flRealTime: usize = 0x28; // float32
+                pub const m_flTickInterval: usize = 0x2C; // float32
+                pub const m_flTickStartTime: usize = 0x30; // float64
             }
             // Parent: None
             // Field count: 0
-            namespace EventServerPollNetworking_t {
+            pub mod EventServerPollNetworking_t {
             }
         }
     }
