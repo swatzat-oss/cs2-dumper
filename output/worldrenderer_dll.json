@@ -1,0 +1,77 @@
+{
+  "worldrenderer.dll": {
+    "classes": {
+      "CEntityComponent": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CEntityIdentity": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CEntityInstance": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CScriptComponent": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      }
+    },
+    "enums": {
+      "AggregateInstanceStream_t": {
+        "alignment": 1,
+        "members": {
+          "AGGREGATE_INSTANCE_STREAM_LIGHTMAPUV_UNORM16": 1,
+          "AGGREGATE_INSTANCE_STREAM_NONE": 0,
+          "AGGREGATE_INSTANCE_STREAM_VERTEXBLEND_UNORM8": 4,
+          "AGGREGATE_INSTANCE_STREAM_VERTEXTINT_UNORM8": 2
+        },
+        "type": "uint8"
+      },
+      "ObjectTypeFlags_t": {
+        "alignment": 4,
+        "members": {
+          "OBJECT_TYPE_BAKED_GEOMETRY": 131072,
+          "OBJECT_TYPE_BLOCK_LIGHT": 16,
+          "OBJECT_TYPE_DISABLED_IN_LOW_QUALITY": 128,
+          "OBJECT_TYPE_DISABLE_VIS_CULLING": 65536,
+          "OBJECT_TYPE_HAS_AGGREGATE_RTPROXY": 524288,
+          "OBJECT_TYPE_MODEL": 8,
+          "OBJECT_TYPE_MODEL_HAS_LODS": 2048,
+          "OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS": 262144,
+          "OBJECT_TYPE_NONE": 0,
+          "OBJECT_TYPE_NO_SHADOWS": 32,
+          "OBJECT_TYPE_OVERLAY": 8192,
+          "OBJECT_TYPE_PRECOMPUTED_VISMEMBERS": 16384,
+          "OBJECT_TYPE_RENDER_TO_CUBEMAPS": 1024,
+          "OBJECT_TYPE_RENDER_WITH_DYNAMIC": 512,
+          "OBJECT_TYPE_STATIC_CUBE_MAP": 32768,
+          "OBJECT_TYPE_WORLDSPACE_TEXURE_BLEND": 64
+        },
+        "type": "uint32"
+      },
+      "RTProxyInstanceFlags_t": {
+        "alignment": 1,
+        "members": {
+          "RTPROXY_INSTANCE_FLAG_NONE": 0,
+          "RTPROXY_INSTANCE_UNIQUE_MESH": 1
+        },
+        "type": "uint8"
+      }
+    }
+  }
+}

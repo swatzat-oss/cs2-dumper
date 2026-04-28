@@ -1,0 +1,530 @@
+{
+  "pulse_system.dll": {
+    "classes": {
+      "CBasePulseGraphInstance": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseArraylib": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_BaseFlow": {
+        "fields": {
+          "": -1539537485,
+          "\u0006": -1961548032,
+          "�\u0014�B\u0003": 1450704896
+        },
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_BaseLerp": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_BaseLerp__CursorState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_BaseRequirement": {
+        "fields": {
+          "": -1539537485,
+          "\u0006": -1961548032,
+          "{\u0014�B\u0003": 1450704896
+        },
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_BaseState": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_BaseValue": {
+        "fields": {
+          "": -1539537485,
+          "\u0006": -1961548032,
+          "R\u0016�B\u0003": 1450704896
+        },
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_BaseYieldingInflow": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_BooleanSwitchState": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_CursorQueue": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_ExampleCriteria": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_ExampleCriteria__Criteria_t": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_ExampleSelector": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_FireCursors": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Inflow_BaseEntrypoint": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Inflow_EntOutputHandler": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Inflow_EventHandler": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Inflow_GraphHook": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Inflow_Method": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Inflow_ObservableVariableListener": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Inflow_Wait": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Inflow_Yield": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_InlineNodeSkipSelector": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_IntervalTimer": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_IntervalTimer__CursorState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_IsRequirementValid": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_IsRequirementValid__Criteria_t": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_LimitCount": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_LimitCount__Criteria_t": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_LimitCount__InstanceState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_Outflow_CycleOrdered": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Outflow_CycleOrdered__InstanceState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_Outflow_CycleRandom": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Outflow_CycleShuffled": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Outflow_TestExplicitYesNo": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Outflow_TestRandomYesNo": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_PickBestOutflowSelector": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Step_CallExternalMethod": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Step_DebugLog": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Step_PublicOutput": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Step_TestDomainCreateFakeEntity": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Step_TestDomainDestroyFakeEntity": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Step_TestDomainEntFire": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Step_TestDomainTracepoint": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_TestWaitWithCursorState": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_TestWaitWithCursorState__CursorState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_Test_MultiInflow_NoDefault": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Test_MultiInflow_WithDefault": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_system"
+      },
+      "CPulseCell_Test_MultiOutflow_WithParams": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Test_MultiOutflow_WithParams_Yielding": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Test_MultiOutflow_WithParams_Yielding__CursorState_t": {
+        "fields": {
+          "": 0,
+          "-�����x}'��i+�:�\u001c�\u0015�<QH\u0015�Ȫ\u001e��\u0019�W�;���Ni��ΊD\u0019\u0019u�͇w\u0001���\u00074���'�2u\u0014��\u0012�\u000e\\����-B׵nU \u0013j\u001b��V���": 0,
+          "C": -363545210
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_Test_NoInflow": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Timeline": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Unknown": {
+        "fields": {
+          "": -1539537485,
+          "\u0006": -1961548032,
+          "R\u0016�B\u0003": 1450704896
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Val_TestDomainFindEntityByName": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Val_TestDomainGetEntityName": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Value_Curve": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Value_Gradient": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseCell_Value_RandomFloat": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Value_RandomInt": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_Value_TestValue50": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_WaitForCursorsWithTag": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_WaitForCursorsWithTagBase": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCell_WaitForCursorsWithTagBase__CursorState_t": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseCell_WaitForObservable": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseCursorFuncs": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseExecCursor": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseGraphInstance_TestDomain": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseGraphInstance_TestDomain_Derived": {
+        "fields": {},
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseGraphInstance_TestDomain_FakeEntityOwner": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulseGraphInstance_TurtleGraphics": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": "pulse_runtime_lib"
+      },
+      "CPulseMathlib": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseTestFuncs_LibraryA": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseTestScriptLib": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulseTurtleGraphicsCursor": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "CPulse_OutflowConnection": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CPulse_ResumePoint": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "CTestDomainDerived_Cursor": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "FakeEntityDerivedA_tAPI": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "FakeEntityDerivedB_tAPI": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "FakeEntity_tAPI": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "SignatureOutflow_Continue": {
+        "fields": {
+          "": 390929757,
+          "P": 6094848
+        },
+        "metadata": [],
+        "parent": ""
+      },
+      "SignatureOutflow_Resume": {
+        "fields": {},
+        "metadata": [],
+        "parent": ""
+      },
+      "TestComponent_tAPI": {
+        "fields": {
+          "": 17825792
+        },
+        "metadata": [],
+        "parent": null
+      }
+    },
+    "enums": {}
+  }
+}
