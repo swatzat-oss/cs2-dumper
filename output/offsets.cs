@@ -1,0 +1,52 @@
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-08-25 05:13:27.362323100 UTC
+
+namespace CS2Dumper.Offsets {
+    // Module: client.dll
+    public static class ClientDll {
+        public const nint dwCSGOInput = 0x23DCC80;
+        public const nint dwEntityList = 0x2572230;
+        public const nint dwGameEntitySystem = 0x2572230;
+        public const nint dwGameEntitySystem_highestEntityIndex = 0x2090;
+        public const nint dwGameRules = 0x23C6D28;
+        public const nint dwGlobalVars = 0x20B05F0;
+        public const nint dwGlowManager = 0x23C3A58;
+        public const nint dwLocalPlayerController = 0x23A1F30;
+        public const nint dwLocalPlayerPawn = 0x23C7268;
+        public const nint dwPlantedC4 = 0x2391A18;
+        public const nint dwPrediction = 0x23C7170;
+        public const nint dwSensitivity = 0x23C4578;
+        public const nint dwSensitivity_sensitivity = 0x58;
+        public const nint dwViewAngles = 0x23DD308;
+        public const nint dwViewMatrix = 0x23CC830;
+        public const nint dwViewRender = 0x23CC898;
+        public const nint dwWeaponC4 = 0x233FF10;
+    }
+    // Module: engine2.dll
+    public static class Engine2Dll {
+        public const nint dwBuildNumber = 0x60F594;
+        public const nint dwNetworkGameClient = 0x90D4B0;
+        public const nint dwNetworkGameClient_clientTickCount = 0x378;
+        public const nint dwNetworkGameClient_deltaTick = 0x24C;
+        public const nint dwNetworkGameClient_isBackgroundMap = 0x2C141F;
+        public const nint dwNetworkGameClient_localPlayer = 0xF8;
+        public const nint dwNetworkGameClient_maxClients = 0x240;
+        public const nint dwNetworkGameClient_serverTickCount = 0x24C;
+        public const nint dwNetworkGameClient_signOnState = 0x230;
+        public const nint dwWindowHeight = 0x9118DC;
+        public const nint dwWindowWidth = 0x9118D8;
+    }
+    // Module: inputsystem.dll
+    public static class InputsystemDll {
+        public const nint dwInputSystem = 0x45BA0;
+    }
+    // Module: matchmaking.dll
+    public static class MatchmakingDll {
+        public const nint dwGameTypes = 0x1ADF80;
+    }
+    // Module: soundsystem.dll
+    public static class SoundsystemDll {
+        public const nint dwSoundSystem = 0x54B5D0;
+        public const nint dwSoundSystem_engineViewData = 0x7C;
+    }
+}
